@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Smart Student Portal</title>
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+			font-family: Times New Roman, sans-serif;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        
+        nav {
+            background: #2c3e50;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background: #34495e;
+            color: #3498db;
+        }
+
+        
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .profile-container h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        
+        .profile-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        
+        .profile-picture-section {
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        .profile-picture-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .profile-picture-section p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .detail-group {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .detail-group:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .detail-group label {
+            display: block;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-group .display-value {
+            color: #34495e;
+            font-size: 1.1rem;
+            padding: 8px 0;
+        }
+
+        .detail-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            display: none;
+        }
+
+        .detail-group input:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        
+        .edit-mode .detail-group .display-value {
+            display: none;
+        }
+
+        .edit-mode .detail-group input {
+            display: block;
+        }
+
+        
+        .button-section {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-edit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-edit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-save {
+            background: #27ae60;
+            color: white;
+            display: none;
+        }
+
+        .btn-save:hover {
+            background: #229954;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn-cancel {
+            background: #95a5a6;
+            color: white;
+            display: none;
+        }
+
+        .btn-cancel:hover {
+            background: #7f8c8d;
+        }
+
+        
+        .message-box {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+            animation: slideDown 0.5s ease;
+        }
+
+        .message-box.show {
+            display: block;
+        }
+
+        .message-box.success {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .message-box.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .profile-content {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-picture {
+                width: 200px;
+                height: 200px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                padding: 0.8rem;
+            }
+
+            .profile-container {
+                padding: 20px;
+            }
+
+            .button-section {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Student Profile Portal</h1>
+        <p>Your Academic Journey, Simplified</p>
+    </header>
+
+    
+    <nav>
+        <ul>
+                <li><a href="Index.html"> Home  </a></li>
+                <li><a href="Profile .html "> Profile </a></li>
+                <li><a href="Subjects.html"> Subjects </a></li>
+                <li><a href="Contact .html"> Contact </a></li> 
+
+        </ul>
+    </nav>
+
+    
+    <div class="profile-container">
+        <h2>📋 Student Profile</h2>
+
+        <div class="profile-content">
+            
+            <div class="profile-picture-section">
+                <img src="WhatsApp Image 2025-11-24 at 5.32.16 PM.jpeg" 
+                     alt="Student Profile Picture" 
+                     class="profile-picture" 
+                     id="profileImage">
+                <h3 id="displayNameTitle">DISHANTHINI YASHIKKUMAR</h3>
+                <p>Computer Science Student</p>
+            </div>
+
+            
+            <div class="profile-details" id="profileDetails">
+                
+                <div class="detail-group">
+                    <label>👤 Full Name</label>
+                    <div class="display-value" id="displayName">Dishanthini Yashikkumar</div>
+                    <input type="text" id="inputName" value="Rajesh Kumar">
+                </div>
+
+                
+                <div class="detail-group">
+                    <label>🎫 Registration Number</label>
+                    <div class="display-value" id="displayRegNo">E267620</div>
+                    <input type="text" id="inputRegNo" value="2024CS001">
+                </div>
+
+               
+                <div class="detail-group">
+                    <label>🎓 Program / Year</label>
+                    <div class="display-value" id="displayProgram">B.Tech Computer Science - Year 2</div>
+                    <input type="text" id="inputProgram" value="B.Tech Computer Science - Year 2">
+                </div>
+
+               
+                <div class="detail-group">
+                    <label>📧 Email Address</label>
+                    <div class="display-value" id="displayEmail">Nisha.kumar@university.edu</div>
+                    <input type="email" id="inputEmail" value="rajesh.kumar@university.edu">
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="button-section">
+            <button class="btn btn-edit" id="editBtn">✏️ Edit Details</button>
+            <button class="btn btn-save" id="saveBtn">💾 Save Changes</button>
+            <button class="btn btn-cancel" id="cancelBtn">❌ Cancel</button>
+        </div>
+
+       
+        <div class="message-box" id="messageBox"></div>
+    </div>
+
+  
+    <footer>
+    <p> 2025 Smart Student Profile Portal. All Rights Reserved.</p>
+    </footer>
+<script src="Script.js"></script>
+</body>
+</html>

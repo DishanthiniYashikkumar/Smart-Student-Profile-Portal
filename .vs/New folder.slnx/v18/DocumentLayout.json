@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Subjects.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Subjects.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Contact .html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Contact .html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Script.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Script.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Script.js",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Script.js",
+              "RelativeDocumentMoniker": "Script.js",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Script.js",
+              "RelativeToolTip": "Script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-07T15:31:54.549Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Subjects.html",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Subjects.html",
+              "RelativeDocumentMoniker": "Subjects.html",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Subjects.html",
+              "RelativeToolTip": "Subjects.html",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-07T15:31:55.868Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.html",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Index.html",
+              "RelativeDocumentMoniker": "Index.html",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Index.html",
+              "RelativeToolTip": "Index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-07T15:31:46.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact .html",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Contact .html",
+              "RelativeDocumentMoniker": "Contact .html",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Assignments\\semester 2\\New folder\\E267620 - Web Development\\New folder\\Contact .html",
+              "RelativeToolTip": "Contact .html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-07T15:31:44.882Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

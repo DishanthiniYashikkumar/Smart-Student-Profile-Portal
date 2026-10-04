@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home - Smart Student Profile Portal</title>
+	   <style>
+        
+        body { 
+            font-family: Times New Roman, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+        }
+        
+       
+        top-bar {
+            background: #2c3e50; 
+            color: #2c3e50;
+            padding: 8px 0;
+            font-size: 0.9em;
+        }
+        .top-bar-content {
+			color: #000000;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-bar a {
+            background: #2c3e50;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        
+        nav { 
+            background: #2c3e50; 
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ff6600; 
+            align-items: center;
+        }
+        .logo i {
+            margin-right: 5px;
+        }
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+        nav ul li { 
+            display: inline; 
+            margin: 0 10px; 
+        }
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 15px; 
+            display: inline-block; 
+            font-weight: 500;
+        }
+        nav ul li a:hover { 
+            color: #ff6600; 
+        }
+
+        
+        .hero-section {
+            background-image:url(large-modern-office-building.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 70vh; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); 
+            z-index: 1;
+        }
+
+        .hero-text-content {
+            z-index: 2; 
+            color: white;
+            max-width: 1200px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .hero-text-content h1 {
+            font-size: 3.5em;
+            max-width: 600px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+
+        .hero-text-content p {
+            font-size: 1.3em;
+            max-width: 650px;
+            margin-bottom: 30px;
+            color: #FFFFFF
+		
+        }
+
+        
+        .btn-get-started {
+            background-color: #ff6600; 
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        .btn-get-started:hover {
+            background-color: 080000;
+            
+        }
+
+        footer { 
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 0; 
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info">
+                <span>+94 00 000 0000</span>
+                <a href="mailto:support@studentportal.edu">support@studentportal.edu</a>
+            </div>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="navbar-content">
+            <div class="logo"><i class="fas fa-graduation-cap"></i> Education</div>
+            <ul>
+                <li><a href="Index.html"> Home  </a></li>
+                <li><a href="Profile .html "> Profile </a></li>
+                <li><a href="Subjects.html"> Subjects </a></li>
+                <li><a href="Contact .html"> Contact </a></li> 
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <div class="hero-text-content">
+            <h1> Smart Student Profile Portal </h1>
+            <h2> <span id="greeting">Loading Greeting......</span></h2> 
+            <p> <b>
+                Welcome to the Smart Student Profile Portal-your personalized digital space for managing academic and personal information with ease. This user-friendly portal helps you stay organized throughout your academic journey by offering a secure and centralized platform to view, update, and track all your important student details. Whether it’s your profile, subjects, or communication needs, everything is just one click away
+            </b>
+			</p>
+            
+        </div>
+    </div>
+	
+	<footer>
+        <p>2025 Smart Student Profile Portal</p>
+    </footer>
+	<script src="Script.js"></script>
+</body>
+</html>
